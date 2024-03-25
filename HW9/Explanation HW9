@@ -1,0 +1,9 @@
+First step is to have a base case where p or q is checked as the root, because if it is, that means that you can just return the root as the LCA assuming that both of the nodes are in the tree.  
+
+Next we check two things. 
+
+The first is if poth p and q are less than the current node meaning that they will both be on the left side, and we can return the left side as the next node. 
+
+The other thing is if p and q are greater than the current node than we will be on the right side.  
+
+If neither of these steps are true, that means that we know that both p and q are on opposite sides of the current node, and that means that we can just return the current node as the LCA, assuming that p and q exist in the tree.
