@@ -1,0 +1,7 @@
+first base case to call is if the root node that is the parameter is null because you just return null 
+
+if thats not true then you continue down and swap the left node and the right node of the root using a temp variable
+
+finally you recursively call the left node and right node of the current root node and that will continue
+
+after all of the recursive calls are finished, you then return the root
