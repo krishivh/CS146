@@ -1,0 +1,17 @@
+first we need to create the helper method which is isValidBSTHelper, in this way we can have a left and right variable as the parameters along 
+with the root node.
+
+We also can define the positive and negative infinity variables which we will be using in the code later. In python we can import the math module, and in java we can use the double class which already has infinity in it.
+
+the first thing we check is if the root is null, and if it is then we return True. This seems counterinituitive, but the reason is because if
+we have an empty binary search tree, that is still a valid binary search tree
+
+the next thing we check is to make sure that the left node of the root node is less than the root, and that the right node of the root is greater than the root
+however, we use a not keyword to check if that statement is not true, and if that is the case, we can just return false, because it doesn't pass the qualifications of a binary search tree
+
+if both of these if statements are false, we then move onto the return statement where we are returning two seperate recursive calls to the isValidBSTHelper
+
+The first call is calling the left node of the current root node, and then the left parameter is the lower bound, in the first case it would be -infinity, and the upper bound which is the current root node
+The second call is calling the right node of the current rood node, and the lower bound is the current root node, and upper bound in the first case would be negative infinity.
+
+finally outside of the helper definition, we call the helper function with the parameters of the root node, negative infinity, and positive infinity.
