@@ -1,0 +1,8 @@
+First we need to create a resultant list to return at the end of the function 
+We also need to create a queue that will hold all the values that are meant to be checked
+We also add the root value that will hopefully not be null and we make sure to check that the root is not null because that is a possible edge case
+We now have a while loop that will continue running as long as the queue is not empty and since it has the root in there right now it will run.
+Next have a new list that is for the nodes on a particular level and have a variable that has the size of the queue, and this will allow for the for loop to cancel itself after all the numbers in the queue are exhausted
+Finally if the current has a left or a right node that is not null, it is added to the queue and the final step is to add the level list to the final list, and the while loop will continue
+once the while loop is broken out of, the list is returned.
+
