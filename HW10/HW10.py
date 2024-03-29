@@ -1,4 +1,5 @@
 import collections
+from typing import Optional, List 
 
 
 class TreeNode(object):
@@ -14,24 +15,24 @@ class TreeNode(object):
 
 class HW10:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        queue = collections.deque
-        
         if root is None:
             return None
         
-        queue.append(root)
+        queue = collections.deque([root])
         
         finalList = []
         
-        while queue is not None:
+        while len(queue) > 0:
             queueSize = len(queue)
             Level = []
             for i in range(queueSize):
                 curr = queue.popleft()
                 if curr is not None:
                     Level.append(curr.val)
-                    queue.append(curr.left)
-                    queue.append(curr.right)
+                    if curr.left is not None:
+                        queue.append(curr.left)
+                    if curr.right is not None:
+                        queue.append(curr.right)
             if Level is not None:
                 finalList.append(Level)
                     
@@ -40,4 +41,12 @@ class HW10:
                 
         
         
-        
+##root = TreeNode(4)
+##root.left = TreeNode(3)
+##root.right = TreeNode(8)
+##root.left.left = TreeNode(1)
+##root.right.left = TreeNode(5)
+##root.right.right = TreeNode(9)
+
+##w10 = HW10()
+##print(hw10.levelOrder(root))
