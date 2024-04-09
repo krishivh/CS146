@@ -1,0 +1,10 @@
+first we check to see if the image exists and if it doesn't have a row or column length then it will just return a blank image back
+we then have a base case if the original color and the new color is the same then just return the image
+next we can use the helper function to fill the 2d array
+after the helper function has finished, we can finally return the 2d array after the recursion is complete
+
+for the helper function we use the same parameters and in addition to that we have one for the original color of the pixel
+next we check if all of the parameters are valid, and even if one of the parameters doesn't fit the charactersitic, then we return out of the recursive call
+After the if statemenet is checked, if it moves on that means that the pixel is valid for being changed and we can change it to the new color
+finally we can recursively call all of the pixels adjacent to the current pixel for those to be changed as well if they meet the correct charactersitics.
+ 
