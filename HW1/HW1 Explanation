@@ -1,0 +1,6 @@
+We first define the starting and ending parameters 
+We have a while loop so as long as the first parameter is less than the second we keep going through index
+We then check if the first index is a letter or digit and if it isnt then we skip past it in the index. We do the same thing with the last index
+We then finally check if the first index and last index are equal and if they are not we can just return false
+if they are equal then we add one to the increment the first index and decrement the last index
+This loop continues and if the while loop finishes successfully, True is returned

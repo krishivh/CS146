@@ -1,0 +1,18 @@
+class HW1(object):
+    def isPalindrome(self, s):
+        start = 0
+        last = len(s)-1
+        while(start<last):
+            if not(s[start].isalpha() or s[start].isdigit()):
+                start+=1
+            elif not(s[last].isalpha() or s[last].isdigit()):
+                last-=1
+            elif not(s[start].lower() == s[last].lower()):
+                    return False
+            else:
+                start+=1
+                last-=1
+        return True
+
+
+        
