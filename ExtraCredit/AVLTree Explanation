@@ -1,0 +1,15 @@
+I first took the treeNode class that was given to us in past homeworks.
+AVL Trees work very similar to binary trees and so it wasn't too hard to implement the first parameter
+First for insertion, you need to check to make sure that the root isn't null 
+Next we can check if it goes into the left subtree of the root or the right subtree of the root by comparing its value
+We also need two more functions which are getHeight and getBalance which are used in the AVL tree as well
+We can make the getHeight function by first checking if the root is null meaning that the height is 0 and if not it just returns the height of the root.
+We need the getheight function so that we can find the overall height of the tree by determining the max height between the left and right side, and then adding one
+Finally we need the getbalance function to balance the tree. I was unable to completely implement this part
+
+Next for the Traversal I did the 3 different traversals. Post order, in order, and pre order. It was pretty straight forward because it is the same as a binary tree
+In order is recursively call the left side of the tree, then print the root and then recursively call the right side of the tree
+Pre order is print the root and then recursively call the left side of the tree and then the right side of the tree
+Finally post order traversal is recursively calling the left tree then the right side of the tree and then printing the node
+
+Finally for deletion it is also the same as BST and so if the value of the key is less than the root it recursively calls the left side and it will recursively call the right if it is greater than
