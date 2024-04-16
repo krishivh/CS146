@@ -1,0 +1,17 @@
+first we have to initialize a hashmap which has the course as an integer as the key mapped to lists of prerequisite courses to take
+then we go through each distinct course one by one
+we can map each of these courses to an empty list
+next we use a for each loop to find each pair of course to prereq combos
+from the hashmap it gets the key of that value of the course and adds the paired prerequisite into the hashmap
+then we have loop over every course in numCourses using dfs to make sure there are no cycles
+if dfs doesn't work for the particular course, that means that we know we cannot finish that course and so it returns false and we know that all the courses cannot be completed
+if dfs works for each course then we get to this stage so we can return true that each course can be completed  
+we next have to create a hash set that will keep track of the courses that have been visited during dfs
+we then define the dfs method this is for the dfs that we call in the canFinish part
+if the current course has been visited, that means that there is a cycle and so we know that we cannot complete this course so we return false
+if there are no prerequisites for the course, that means that we can complete the course so we return true
+add the current course to the visited hash set
+goes through each of the prerequisites of the current course
+if any of the prerequisite courses returns a cycle that means that it cannot be done and we return false
+if dfs works for all prereqs of the course, then we can remove the course from visited courses bc it can be completed
+finally return true because the course can be completed
