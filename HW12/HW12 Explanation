@@ -1,0 +1,12 @@
+Make a isVisited boolean method to see if see if each house has been visited yet
+Then create visitedlist which will return true or false based on if all the houses have been visited yet
+Initialize the cost as 0 and we will add to it later
+Initialize the bestWell as the maximum possible integer and make the bestWellHouse which will contain the index of the best house
+iterate through all of the wells
+if the well is not in the visited list and the next well that we are iterating through is better, then we change the best well and swap the index
+if the if statement passes then we change the best well and its index
+reason that the house index is not i-1 is because wells starts at 1 instead of 0
+also initialize the bestPipe to the same maximum value
+determine which one to create either the well or the pipe based on cost
+and then finally return the final cost
+
