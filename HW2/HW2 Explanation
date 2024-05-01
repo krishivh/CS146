@@ -1,0 +1,7 @@
+initialize low as 0 and high as n which are the highest and lowest possible indexes for the first bad version
+we also initalize the answer as -1 for now which will be changed later
+while low is less than or equal to high we do two different if statements and initalize mid
+we initialize mid as high-low divided by 2 added to low which is better than just high+low divided by 2 for larger numbers
+the first if statement then checks if the mid number is a bad version
+if it is a bad version we change answer to mid and then we update high to mid-1
+else if it is not a bad version we update low with mid+1 and then outside the while loop we return answer
