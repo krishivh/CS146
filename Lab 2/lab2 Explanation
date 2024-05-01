@@ -1,0 +1,1 @@
+If the sorted version of both of the strings are equivalent, that means that they are anagrams, and so we can return true if the sorted versions of both strings are equivalent
