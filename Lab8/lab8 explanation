@@ -1,0 +1,8 @@
+initalize an array with amount+1 coins and the reason is if we need to use pennies only we still have enough to create amount
+fill the entire array with amount+1 as the value and as we test out possibilities for amount that will be updates
+make the minimum amount of coins for an amount 0 to be 0
+iterate through each coin in coins
+iterate through each amount starting from the value of the coin
+calculate the minimum number of coins needed for current amount
+check if the amount is less than or equal to and if it is then erturn minCoin[amount]
+return -1 if there is no possible combination
