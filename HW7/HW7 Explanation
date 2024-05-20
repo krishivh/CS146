@@ -1,0 +1,9 @@
+First sort the given intervals so that we have all of the earlier starting times first
+we then create a new list which we will add the end times to and see if a server can be assigned
+iterate througha for each loop for each input and have a variable start equal to the starting time and end equal to the ending time
+we also create a new variable to keep track of whether or not the server is being assigned
+we now have another for loop where we check if the there is a server available to use if the ending time is less than the new starting time
+if that is true we can reassign the ending time to the new ending time because the server is being reused
+we also make sure to change the assigned variable to true
+outside the for loop we check if the server is assigned, and if it is, then we add the new ending time because we know we need another server
+the final step is to return the length of all the ending times because we know that every time something was added to ending times, it was bc the server was busy, and we needed a new server, so each time that happens, a new server is required
