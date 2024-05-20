@@ -1,0 +1,11 @@
+we first sort the array and initialize a list to hold all of the possible triplets
+we then have a for loop that iterates through all the elements in nums
+inside the for loop we check to see if the new element we are checking is the same as the previous one, and if it is then we skip it
+initialize left and right as two pointers converging to the center
+have a while loop where left is less than right and will stop when that statement isn't true
+next we check to see if the current number added with the left index and right index is 0
+if the number is too great, we can decrement the index of the right side to make the total smaller
+similarly, if the number is too small, we can increment the index on the left side to make the total larger
+if neither are true, we have a triplet equal to 0 so we add it to the list of triplets and we also increment the left side to continue looking for possible triplets
+we also have a while loop that will keep incrementing the left until we get to a unique element, or else there is possibility for a duplicate triplet
+finally we return the list of triplets
